@@ -1,0 +1,19 @@
+*{
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+body {
+    background-color:green;
+    margin: 160px 240px;
+    padding: 0px 110px;
+}
+button{
+    padding: 20px;
+    margin: 20px;
+}   
+div{
+    right: 20px;
+}
+p{
+    font-size: 20pxs;
+}
