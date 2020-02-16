@@ -2,8 +2,8 @@ let map;
 // get the users current location
 // currently hardcoded
 let user_location = {
-    lat: 40.7828647,
-    lng: -73.9675438
+    lat: 40.7579747,
+    lng: -73.9939174
 };
 
 function initMap() {
@@ -58,12 +58,12 @@ const icons = {
             // code using geometry library
             // console.log(google.maps.geometry.poly.containsLocation(new google.maps.LatLng
             //     (currentLocation['lat'], currentLocation['lng']), radius))
-            console.log(currentLocation)
-            console.log(user_location)
+            // console.log(currentLocation)
+            // console.log(user_location)
             
             if(google.maps.geometry.poly.containsLocation(new google.maps.LatLng
                 (currentLocation['lat'], currentLocation['lng']), radius)) {
-                console.log("Place")  
+                // console.log("Place")  
                 new google.maps.Marker({
                     position: new google.maps.LatLng
                 (currentLocation['lat'], currentLocation['lng']),
@@ -95,5 +95,5 @@ const icons = {
 
 
     // change "Water" to either ["Wifi", "Bin"]
-    findClosestLocation("Water") 
+    findClosestLocation(type) 
 }

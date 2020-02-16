@@ -8,8 +8,16 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname + '/src/Stony/secondPage.html'))
 })
 
-app.get('/map', (req, res) => {
+app.get('/map1', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'))
+})
+
+app.get('/map2', (req, res) => {
+    res.sendFile(path.join(__dirname + '/index1.html'))
+})
+
+app.get('/map3', (req, res) => {
+    res.sendFile(path.join(__dirname + '/index2.html'))
 })
 
 app.get('/script.js', (req, res) => {
@@ -18,6 +26,10 @@ app.get('/script.js', (req, res) => {
 
 app.get('/style.css', (req, res) => {
     res.sendFile(path.join(__dirname + '/style.css'))
+})
+
+app.get('/StyleSheet.css', (req, res) => {
+    res.sendFile(path.join(__dirname + '/src/Stony/StyleSheet.css'))
 })
 
 app.get('/findWater', async (req, res) => {
