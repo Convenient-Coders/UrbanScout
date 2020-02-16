@@ -5,6 +5,10 @@ const port = process.env.PORT || 8080
 const http = require('http').Server(app)
 
 app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname + '/src/Stony/secondPage.html'))
+})
+
+app.get('/map', (req, res) => {
     res.sendFile(path.join(__dirname + '/index.html'))
 })
 
@@ -27,6 +31,7 @@ app.get('/findBin', async (req, res) => {
 app.get('/findWifi', async (req, res) => {
     res.sendFile(path.join(__dirname + "/wifi.txt"))
 })
+
 
 const server = http.listen(port, function() {
     console.log(`listening on *: ${port}`);
