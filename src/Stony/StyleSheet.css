@@ -3,7 +3,7 @@
     padding: 0px 0px;
 }
 body {
-    background-color:green;
+    background-color:#77dd77;
     margin: 160px 240px;
     padding: 0px 110px;
 }
@@ -15,5 +15,5 @@ div{
     right: 20px;
 }
 p{
-    font-size: 20pxs;
+    font-size: 20px;
 }
